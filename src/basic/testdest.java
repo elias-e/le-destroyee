@@ -8,6 +8,7 @@ public class testdest {
 		Motor.A.forward();
 		Motor.B.forward();
 		Motor.C.forward();
+		Motor.A.stop();
 
 	}
 
