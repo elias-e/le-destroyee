@@ -20,6 +20,8 @@ public class testdest {
 		 
 		 Abhauen b = new Abhauen();
 		 b.flieh();
+		Motor.A.stop();
+
 	}
 	
 }
