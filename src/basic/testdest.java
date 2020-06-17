@@ -28,19 +28,35 @@ public class testdest {
 			}
 		});
 		
+
+		
+			for(int j=0; j<10; j++) {
 		Delay.msDelay(5000);
-		Motor.B.backward();
-		Motor.B.setSpeed(30000);
+		Motor.B.setSpeed(300);
+		Motor.B.forward();
+		Motor.C.setSpeed(300);
 		Motor.C.forward();
-		Motor.C.setSpeed(30000);
 		
+		for(int k=0; k<100; k++) {
+			Delay.msDelay(5000);
+			Motor.B.setSpeed(300);
+			Motor.B.backward();
+			Motor.C.setSpeed(300);
+			Motor.C.forward();
+		}
 		
-		 Attack a = new Attack();
-		 a.goOn();
+			}
+			for(int i=0; i<4; i++) {
+		Motor.A.setSpeed(300);
+		Motor.A.forward();
+			}
+		
+		 //Attack a = new Attack();
+		 //a.goOn();
 		 
-		 Abhauen b = new Abhauen();
-		 b.flieh();
-		Motor.A.stop();
+		 //Abhauen b = new Abhauen();
+		 //b.flieh();
+		//Motor.A.stop();
 		
 	}
 	
